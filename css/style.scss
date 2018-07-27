@@ -6,7 +6,7 @@
 .no-padding {
     padding: 0;
 }
-
+/*======================= login-form ==============*/
 .login-form {
     max-width: 937px;
     margin: 0 auto;
@@ -44,14 +44,14 @@
 
 }
 
-
+/*======================= banner ==============*/
 .banner {
     img {
         width: 100%;
     }
 }
 
-
+/*======================= left-aside ==============*/
 .left-aside {
     background: url(../images/left-aside.png) no-repeat;
     background-size: 100% 100%;
@@ -172,7 +172,7 @@
         }
     }
 }
-
+/*======================= main-bg ==============*/
 .main-bg {
 
     padding-bottom: 90px;
@@ -214,7 +214,7 @@
     }
 }
 
-
+/*======================= right-aside ==============*/
 .right-aside{
     background: url(../images/right-widget.png) no-repeat;
     background-size: 100% 100%;
