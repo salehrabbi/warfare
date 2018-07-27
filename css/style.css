@@ -2,6 +2,9 @@
   background: url(../images/login-bg.png) no-repeat #1b1d1a;
   background-size: 100% 100%; }
 
+.no-padding {
+  padding: 0; }
+
 .login-form {
   max-width: 937px;
   margin: 0 auto;
@@ -40,7 +43,9 @@
 
 .left-aside {
   background: url(../images/left-aside.png) no-repeat;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  padding-bottom: 70px;
+  padding-top: 34px; }
   .left-aside .widget {
     padding-top: 35px; }
   .left-aside .widget-1 {
@@ -104,3 +109,70 @@
       .left-aside .widget-2 ul li {
         display: inline-block;
         margin: 0 2px; }
+  .left-aside .widget-3 {
+    padding-left: 40px; }
+    .left-aside .widget-3 .z-index {
+      background: url(../images/list.png) no-repeat;
+      background-size: 100% 100%;
+      padding-top: 24px;
+      padding-bottom: 10px; }
+    .left-aside .widget-3 h3 {
+      margin: 0;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 17px; }
+    .left-aside .widget-3 ul {
+      padding: 0 40px;
+      list-style: none; }
+      .left-aside .widget-3 ul li {
+        padding: 15px 0;
+        border-top: 1px solid #161714;
+        padding-top: 10px; }
+        .left-aside .widget-3 ul li a {
+          color: #595959;
+          font-size: 11px; }
+        .left-aside .widget-3 ul li p {
+          font-size: 10px;
+          margin: 0;
+          color: #858585; }
+          .left-aside .widget-3 ul li p date {
+            float: right; }
+
+.main-bg {
+  padding-bottom: 90px;
+  position: relative; }
+  .main-bg:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../images/main-bg.png) no-repeat;
+    background-size: 100% 100%;
+    left: 0;
+    top: 0; }
+  .main-bg a.title {
+    color: #456665;
+    font-size: 16px;
+    border-bottom: 1px solid #0a0a0a;
+    display: block;
+    padding: 5px 30px; }
+  .main-bg .img {
+    width: 30%;
+    padding: 15px 0; }
+    .main-bg .img img {
+      width: 100%; }
+  .main-bg .text {
+    width: 70%;
+    padding: 15px;
+    color: #242523; }
+    .main-bg .text p {
+      color: #878c8c; }
+    .main-bg .text a {
+      color: #242523; }
+
+.right-aside {
+  background: url(../images/right-widget.png) no-repeat;
+  background-size: 100% 100%; }
+  .right-aside .widget {
+    padding-top: 40px; }
