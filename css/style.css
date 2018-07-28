@@ -43,12 +43,22 @@
 .banner img {
   width: 100%; }
 
+.main-header {
+  position: relative;
+  z-index: 5; }
+
+body {
+  background: #2b2b2b; }
+
+main {
+  margin-top: -144px; }
+
 /*======================= left-aside ==============*/
 .left-aside {
   background: url(../images/left-aside.png) no-repeat;
   background-size: 100% 100%;
   padding-bottom: 70px;
-  padding-top: 34px; }
+  padding-top: 72px; }
   .left-aside .widget {
     padding-top: 35px; }
   .left-aside .widget-1 {
@@ -85,7 +95,8 @@
     padding-left: 40px;
     position: relative;
     height: 327px;
-    padding-top: 110px; }
+    padding-top: 110px;
+    max-width: 322px; }
     .left-aside .widget-2:after {
       position: absolute;
       content: "";
@@ -94,10 +105,11 @@
       width: 315px;
       height: 327px;
       top: 0;
-      left: 0; }
+      left: 6px;
+      z-index: 3; }
     .left-aside .widget-2 .z-index {
       position: relative;
-      z-index: 2; }
+      z-index: 4; }
     .left-aside .widget-2 h3 {
       margin: 0;
       text-align: center;
@@ -144,21 +156,27 @@
 
 /*======================= main-bg ==============*/
 .main-bg {
+  padding: 0 20px;
   padding-bottom: 90px;
-  position: relative; }
+  position: relative;
+  padding-top: 160px; }
   .main-bg:before {
     content: "";
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 107%;
     background: url(../images/main-bg.png) no-repeat;
     background-size: 100% 100%;
-    left: 0;
-    top: 0; }
+    left: -4%;
+    top: 0;
+    z-index: 1; }
+  .main-bg .item {
+    position: relative;
+    z-index: 2; }
   .main-bg a.title {
-    color: #456665;
+    color: #3f5270;
     font-size: 16px;
-    border-bottom: 1px solid #0a0a0a;
+    border-bottom: 2px solid #0a0a0a;
     display: block;
     padding: 5px 30px; }
   .main-bg .img {
@@ -173,11 +191,129 @@
     .main-bg .text p {
       color: #878c8c; }
     .main-bg .text a {
-      color: #242523; }
+      color: #242523;
+      position: relative;
+      z-index: 3; }
 
 /*======================= right-aside ==============*/
 .right-aside {
-  background: url(../images/right-widget.png) no-repeat;
-  background-size: 100% 100%; }
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 85px; }
+  .right-aside:before {
+    content: "";
+    background: url(../images/right-widget.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 116%;
+    height: 100%;
+    left: -16%;
+    top: 10px; }
   .right-aside .widget {
-    padding-top: 40px; }
+    padding-top: 40px;
+    position: relative;
+    z-index: 3; }
+  .right-aside .widget-1 h3 {
+    font-size: 12px;
+    color: #8cafaf;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    left: -15px;
+    text-transform: uppercase; }
+    .right-aside .widget-1 h3 span {
+      z-index: 2;
+      position: relative; }
+    .right-aside .widget-1 h3:before {
+      background: url(../images/title.png) no-repeat;
+      background-size: auto auto;
+      background-size: 100% 100%;
+      content: "";
+      height: 65px;
+      width: 153%;
+      position: absolute;
+      left: -28%;
+      top: -25px; }
+  .right-aside .widget-1 a.view-more {
+    font-size: 12px;
+    color: #252a25;
+    margin-right: 70px; }
+  .right-aside .widget-1 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 58px;
+    padding-left: 35px;
+    padding-right: 52px; }
+    .right-aside .widget-1 ul li {
+      border-top: 2px solid #0d0d0d;
+      padding: 5px 0; }
+      .right-aside .widget-1 ul li:last-child {
+        border-bottom: 2px solid #0d0d0d; }
+      .right-aside .widget-1 ul li .img {
+        float: left;
+        width: 40%;
+        text-align: center; }
+      .right-aside .widget-1 ul li .text {
+        float: left;
+        width: 60%;
+        padding-top: 12px; }
+        .right-aside .widget-1 ul li .text p {
+          margin: 0; }
+          .right-aside .widget-1 ul li .text p a {
+            color: #b7c2bf; }
+        .right-aside .widget-1 ul li .text div {
+          font-size: 12px;
+          color: #727675; }
+  .right-aside .widget-2 {
+    padding-top: 0; }
+    .right-aside .widget-2 .reward {
+      position: relative;
+      left: -56px; }
+  .right-aside .widget-3 {
+    padding-right: 35px; }
+    .right-aside .widget-3 .z-index {
+      background: url(../images/list.png) no-repeat;
+      background-size: 100% 100%;
+      padding-top: 24px;
+      padding-bottom: 10px; }
+    .right-aside .widget-3 h3 {
+      margin: 0;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 17px; }
+    .right-aside .widget-3 ul {
+      padding: 0 40px;
+      list-style: none; }
+      .right-aside .widget-3 ul li {
+        padding: 6px 0;
+        border-top: 1px solid #161714; }
+        .right-aside .widget-3 ul li a {
+          color: #595959;
+          font-size: 11px; }
+        .right-aside .widget-3 ul li p {
+          font-size: 13px;
+          margin: 0;
+          color: #858585; }
+          .right-aside .widget-3 ul li p date {
+            float: right; }
+
+.main-footer {
+  padding: 30px 0;
+  padding-top: 0; }
+  .main-footer .footer-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center; }
+    .main-footer .footer-menu li {
+      display: inline-block;
+      margin-right: 5px; }
+      .main-footer .footer-menu li a {
+        color: #788f95;
+        border-right: 1px solid #788f95;
+        padding-right: 10px; }
+      .main-footer .footer-menu li:last-child a {
+        border: none; }
